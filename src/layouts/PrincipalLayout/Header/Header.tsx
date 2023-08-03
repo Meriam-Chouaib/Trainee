@@ -11,7 +11,7 @@ export const Header = () =>{
     const navigate = useNavigate();
     const handleLogout = () => {
         clearLocalStorage();
-        navigate(PATHS.PRINCIPAL.LOGIN);
+        navigate(PATHS.AUTH.LOGIN);
       };
       const user:User = getPersistData('user',true);
     return<>
@@ -23,7 +23,7 @@ export const Header = () =>{
             <StyledLink to={PATHS.PRINCIPAL.PROFILE}>
                 Profile
             </StyledLink>
-            {!user?<StyledLink to={PATHS.PRINCIPAL.LOGIN}>
+            {!user?<StyledLink to={PATHS.AUTH.LOGIN}>
                 Login
             </StyledLink>:<LogoutIcon onClick={handleLogout}/>
 }

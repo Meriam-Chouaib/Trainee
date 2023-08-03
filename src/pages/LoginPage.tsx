@@ -9,7 +9,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import { CustomButton } from "../components/FormHook/Button/Button";
 import { User, users } from "../utils/fakeData";
 import { PATHS } from "../config/paths";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { LoginSchema } from "../schemas/LoginSchema";
 
 
@@ -50,6 +50,9 @@ navigate(PATHS.PRINCIPAL.PROFILE);
         <TextField label={'password'} name={"password"} type="password"/>
         <CustomButton>Connect</CustomButton>    
       </StackForm>
+      <Link to={PATHS.AUTH.REGISTER}>
+        <Typography variant='h3'>register now!</Typography>
+      </Link>
     </FormProvider>  
     </>
   );

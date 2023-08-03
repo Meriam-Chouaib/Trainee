@@ -9,10 +9,9 @@ interface PrincipalGuardProps {
 }
 export function PrincipalGuard({ children }: PrincipalGuardProps) {
 const user = getPersistData('user',true)
-console.log("usssreeeeerrr",user);
 
   if (user===undefined) {
-    return <Navigate to={PATHS.PRINCIPAL.LOGIN} replace />;
+    return <Navigate to={PATHS.AUTH.LOGIN} replace />;
   }
   return <>{children}</>;
 }

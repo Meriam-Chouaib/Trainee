@@ -20,11 +20,12 @@ export default function Router(){
             path:PATHS.PRINCIPAL.PROFILE,
             element:<PrincipalGuard><ProfilePage /></PrincipalGuard>,
         },{
-            path:PATHS.PRINCIPAL.LOGIN,
+            path:PATHS.AUTH.LOGIN,
             element:
              
             <LoginPage />
              
-        }],
+        }
+    ],
     }])
 }
