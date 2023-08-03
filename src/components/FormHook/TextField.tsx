@@ -24,6 +24,7 @@ export default function TextField({ name, label, ...other }: TextFieldProps) {
           type={other.type}
           {...field}
           fullWidth
+          sx={{margin:'15px 0'}}
           error={!!error}
           helperText={error && error.message}
           {...other}
