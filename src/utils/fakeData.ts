@@ -4,6 +4,7 @@ export interface User {
     name?:string;
     lastname?:string;
     address?:string;
+    role?:string
 
   }
 export const users : User [] = [
@@ -13,6 +14,7 @@ export const users : User [] = [
     name:'BenKahla',
     lastname:'Leila',
     address:'Sahloul, Sousse',
+    role:'VISITOR'
     }
 ,    {
     email:'bechir@gmail.com',
@@ -20,4 +22,5 @@ export const users : User [] = [
     name:'Chouaib',
     lastname:'Bechir',
     address:'Sahloul, Sousse',
-    }]
+    role:'ADMIN'
+}]

@@ -13,8 +13,6 @@ import { Link, useNavigate } from "react-router-dom";
 import { LoginSchema } from "../schemas/LoginSchema";
 
 
-
-
 const defaultValues={
     email:'',
     password:''
