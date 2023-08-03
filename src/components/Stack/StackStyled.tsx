@@ -9,7 +9,5 @@ export const StackOutlet = styled(Stack)(() => ({
     textAlign:'center',
   }));
   export const StackForm = styled(Stack)(() => ({
-display:'flex',
-alignItems:'center',
-justifyContent:'center'
+display:'block'
   }));

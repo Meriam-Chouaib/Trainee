@@ -5,6 +5,7 @@ import ProfilePage from "../pages/ProfilePage";
 import LoginPage  from "../pages/LoginPage";
 import { PrincipalGuard } from "../guards/GuardPrincipal/GuardPrincipal";
 import HomePage from "../pages/HomePage";
+import { Register } from "../features/Register/Register";
 
 export default function Router(){
     return useRoutes([{
@@ -24,6 +25,12 @@ export default function Router(){
             element:
              
             <LoginPage />
+             
+        },{
+            path:PATHS.AUTH.REGISTER,
+            element:
+             
+            <Register />
              
         }
     ],

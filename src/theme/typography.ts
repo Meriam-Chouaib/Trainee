@@ -21,7 +21,7 @@ export const typography : TypographyOptions = {
     h3:{
         fontFamily:FONT,
         textAlign:'center',
-        fontSize:'20px',
+        fontSize:'15px',
         fontWeight:'bold',
         color:COLORS.PRIMARY.DARK,
     },
