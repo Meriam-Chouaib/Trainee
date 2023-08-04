@@ -5,12 +5,14 @@ import { TextField as MuiTextField, StandardTextFieldProps } from '@mui/material
 interface TextFieldProps extends StandardTextFieldProps {
   name: string;
   label: string;
+  vari?:"standard"|"outlined"|"filled";
   type?: 'text' | 'password' | 'file' | 'number' | 'email';
   onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   inputProps?: any;
+  fontColor?:string;
 }
 
-export default function TextField({ name, label, ...other }: TextFieldProps) {
+export default function TextField({ name, label,vari,fontColor, ...other }: TextFieldProps) {
   const { control, register } = useFormContext();
 
   return (
@@ -19,12 +21,12 @@ export default function TextField({ name, label, ...other }: TextFieldProps) {
       control={control}
       render={({ field, fieldState: { error } }) => (
         <MuiTextField
-          variant="standard"
+          variant={vari?vari:"standard"}
           label={label}
           type={other.type}
           {...field}
           fullWidth
-          sx={{margin:'8px 0'}}
+          sx={{margin:'8px 0',fontColor:`${fontColor}`}}
           error={!!error}
           helperText={error && error.message}
           {...other}

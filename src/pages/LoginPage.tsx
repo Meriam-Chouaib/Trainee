@@ -1,7 +1,7 @@
 
 import { useForm } from "react-hook-form";
-import { StackForm } from "../components/Stack/StackStyled";
-import TextField from "../components/FormHook/TextField";
+import { StackForm } from "../components/Stack/StackStyled.style";
+import TextField from "../components/FormHook/TextField/TextField";
 import FormProvider from "../components/FormHook/FormProvider";
 import {  persistData } from "../utils/localstorage";
 import { Typography } from "@mui/material";
