@@ -10,3 +10,18 @@ export const BoxCard = styled(Box)(() => ({
     boxShadow: '0px 5px 15px gray',
     padding: '1rem',
   }));
+
+  export const BoxCenter = styled(Box)(() => ({
+    display:'flex',
+    alignItems:'center',
+    justifyContent:'center',
+    
+  [theme.breakpoints.down(800)]: {
+    flexDirection: 'column',
+  },
+ })); 
+ export const BoxSpaceBetween = styled(Box)(() => ({
+    display:'flex',
+    alignItems:'center',
+    justifyContent:'space-between',
+ })); 

@@ -1,5 +1,5 @@
 import { Outlet } from 'react-router-dom'
-import { StackOutlet } from '../../components/Stack/StackStyled'
+import { StackOutlet } from '../../components/Stack/StackStyled.style'
 import { Footer } from './Footer/Footer'
 import { Header } from './Header/Header'
 

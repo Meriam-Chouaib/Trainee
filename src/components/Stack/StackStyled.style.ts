@@ -11,3 +11,5 @@ export const StackOutlet = styled(Stack)(() => ({
   export const StackForm = styled(Stack)(() => ({
 display:'block'
   }));
+  export const Container = styled(Stack)(() => ({
+padding:'0px 7rem'  }));

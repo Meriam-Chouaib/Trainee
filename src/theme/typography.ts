@@ -9,6 +9,7 @@ export const typography : TypographyOptions = {
         fontSize:'50px',
         fontWeight:'bold',
         color:COLORS.PRIMARY.DARK,
+        marginBottom: '1.5rem',
     },
     h2:{
         fontFamily:FONT,
@@ -21,8 +22,9 @@ export const typography : TypographyOptions = {
     h3:{
         fontFamily:FONT,
         textAlign:'center',
-        fontSize:'15px',
-        fontWeight:'bold',
+        fontSize:'27px',
+        fontWeight:400,
+        marginBottom:'1rem',
         color:COLORS.PRIMARY.DARK,
     },
 }

@@ -5,9 +5,9 @@ export const COLORS = {
     LIGHT: '#2D2968',
   },
   SECONDARY: {
-    DARK: '#FEC6C6',
-    MAIN: '#F9D0D0',
-    LIGHT: '#F8E6E6',
+    DARK: '#890909',
+    MAIN: '#e50914',
+    LIGHT: '#ff0000bd',
   },
   WARNING: {
     DARK: '#A4BCC1',
@@ -25,14 +25,15 @@ export const COLORS = {
     LIGHT: '#A2DBA5',
   },
   GREY: {
-    100: '#efefef99',
-    200: '#eeeeee',
+    100: '#ffffff',
+    200: '#000000',
     300: '#e0e0e0',
     400: '#bdbdbd',
     500: '#9e9e9e',
     600: '#757575',
     700: '#616161',
     800: '#424242',
-    900: '#212121',
-  },
+    900: '#00000061',
+    
+  }
 };

@@ -1,11 +1,14 @@
 export const PATHS = {    
      ROOT : '/',
      PRINCIPAL:{
-    PROFILE:'/profile',
-    
-     },
+     PROFILE:'/profile',
+         },
      AUTH:{
         LOGIN:'/login',
         REGISTER:'/register',
+     },
+     NETFLIX:{
+        ROOT:'/netflix',
+        HOME:'/netflix/home',
      }
 }
